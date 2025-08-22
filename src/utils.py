@@ -435,6 +435,13 @@ def generate_model_report(model, X_test: pd.DataFrame, y_test: pd.Series,
     
     return report
 
+def calculate_statistics(data):
+    """Calculate basic statistics for dataset.""" [cite: 65]
+    return {
+        'mean': data.mean(), [cite: 67]
+        'std': data.std(), [cite: 68]
+        'count': len(data) [cite: 69]
+    }
 
 # Example usage
 if __name__ == "__main__":
